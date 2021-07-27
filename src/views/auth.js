@@ -50,7 +50,7 @@ const Auth = () => {
         history.push(`home/${res.data.id}`);
       }
     } catch (err) {
-      setLoginError(err.toString());
+      setLoginError("Invalid Credentials Entered");
     }
     setLoading(false);
   };
