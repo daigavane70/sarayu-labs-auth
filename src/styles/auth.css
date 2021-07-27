@@ -1,0 +1,121 @@
+.auth-titles {
+  font-size: 32px;
+  padding-block: 20px;
+  font-weight: bold;
+}
+
+.auth-box {
+  height: fit-content;
+  display: inline-block;
+  width: 500px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 50px;
+  /* margin-bottom: 20px;
+    background-color: rgba(1, 66, 109, 0.8); */
+  max-width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.auth-box input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 40px;
+  color: rgb(0, 140, 255);
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: none;
+  font-family: "Courier New", Courier, monospace;
+  padding-inline: 10px;
+  font-size: 20px;
+  box-sizing: border-box;
+  transition: 200ms ease-out;
+  border-bottom: 1px solid rgb(0, 140, 255, 0);
+  font-weight: bold;
+}
+
+.auth-box input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(0, 140, 255);
+}
+
+.error-message {
+  color: red;
+  margin-block: 20px;
+}
+
+.success-message{
+  color: green;
+  font-weight: bolder;
+  margin-block: 20px;
+}
+
+.submit-button {
+  height: 50px;
+  background: rgb(0, 225, 255);
+  padding-inline: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  border: 2px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border-radius: 25px;
+  transition: ease 200ms;
+}
+
+.submit-button:hover {
+  border: 2px solid rgba(0, 0, 0, 1);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.toggler {
+  height: 40px;
+  font-weight: bold;
+  background: black;
+  color: white;
+  border-radius: 20px;
+  padding-inline: 20px;
+  border: 2px solid black;
+  transition: ease 200ms;
+}
+
+.toggler:hover {
+  color: black;
+  background: white;
+  border: 2px solid black;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.name-inputs{
+    display: flex;
+    justify-content: space-between;
+}
+.name-inputs input{
+    display: inline-block;
+    width: 49%;
+    min-width: 40px;
+}
+
+@media (max-width: 600px) {
+    .auth-box{
+        width: 80%;
+        padding: 0px;
+        padding: 20px;
+        padding-block: 50px;
+        text-align: center;
+    }
+    
+    .auth-box input{
+        width: 100%;
+    }
+
+    .name-inputs{
+        display: inline-block;
+    }
+}
