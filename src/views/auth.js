@@ -72,7 +72,8 @@ const Auth = () => {
       setRegisterError("Invalid last Name");
       return;
     }
-    if (registerDetails.email === "" || !validator.isEmail(loginData.email)) {
+    // if (registerDetails.email === "" || !validator.isEmail(loginData.email.toString())) {
+    if (registerDetails.email === "") {
       setRegisterError("Invalid Email");
       return;
     }
